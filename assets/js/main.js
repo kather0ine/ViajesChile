@@ -23,7 +23,7 @@ $('[data-toggle="tooltip"]').tooltip();
   
 
 $("#chile").click(function () {
-    alert("¡Estás mejor lugar para elegir tu próximo destino!");
+    alert("¡Estás en el mejor lugar para elegir tu próximo destino!");
   })
   
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
