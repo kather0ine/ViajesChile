@@ -72,7 +72,7 @@
   </a>
 </div>
 
-  <!--Section-->
+  <!--P Section-->
 <section id="quienes" class="text-center container-fluid my-5 p-4 d-none d-sm-none d-md-block">
     <div>
         <h2>¿Quiénes somos?</h2>
@@ -97,15 +97,20 @@
 </section>
 
 <!-- Cards Section-->
-<section id="destacados" class="container-fluid my-5 p-4">
-    <h2 class=" text-center">Destacados</h2>
+<section class="container-fluid my-5 p-4 destacados">
+    <h2 id="destacados" class=" text-center">Destacados</h2>
     <hr class="text-info bg-info">
+
     <div class="card-deck p-4">
         <div class="card bg-info">
           <img src="assets/img/card1.jpg" class="card-img-top" alt="Paisajes de Torres del Paine">
           <div class="card-body">
             <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, deserunt earum. Porro accusamus reiciendis fugit, recusandae molestias sunt asperiores quisquam veritatis aliquam.</p>
+            <hr>
+          <div class="text-center pt-2">
+            <a href="#" class= "btn btn-outline-light" data-toggle="modal" data-target="#paisajes">Ver más</a>
+          </div>
           </div>
         </div>
 
@@ -114,6 +119,10 @@
           <div class="card-body">
             <h5 class="card-title">consectetur adipisicing elit</h5>
             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, deserunt earum. Porro accusamus reiciendis fugit, recusandae molestias sunt asperiores quisquam veritatis aliquam.</p>
+            <hr>
+          <div class="text-center pt-2">
+            <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#reserva">Ver más</a>
+          </div>
           </div>
       </div>
 
@@ -122,6 +131,10 @@
             <div class="card-body">
               <h5 class="card-title">Sed do eiusmod tempor incididunt ut labore</h5>
               <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, deserunt earum. Porro accusamus reiciendis fugit, recusandae molestias sunt asperiores quisquam veritatis aliquam.</p>
+              <hr>
+          <div class="text-center pt-2">
+            <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#laguna">Ver más</a>
+          </div>
             </div>
         </div>
 
@@ -130,22 +143,123 @@
             <div class="card-body">
               <h5 class="card-title">Ut enim ad minim veniam</h5>
               <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, deserunt earum. Porro accusamus reiciendis fugit, recusandae molestias sunt asperiores quisquam veritatis aliquam.</p>
+              <hr>
+          <div class="text-center pt-2">
+            <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#bosque">Ver más</a>
+          </div>
             </div>
         </div>
     </div>
   </section>
 
-  <section id="contacto" class="container-fluid my-5">
-    <h2 class=" text-center">Contacto</h2>
-    <hr class="text-info bg-info">
-    <div class="formtype p-3">
-    </div>
-  </section>
 
+<!--modal-->
+<div class="modal fade" id="paisajes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-dark" id="exampleModalLabel">Paisajes de Torres del Paine</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/card1.jpg" class="card-img-top img-fluid my-3" alt="Paisajes de Torres del Paine">
+        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, ipsam, eveniet dolores ea explicabo unde tempora nobis commodi, delectus ipsa voluptatibus. Tenetur, reprehenderit? Delectus explicabo fugit dicta vitae. Officia.</p>
+        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, ipsam, eveniet dolores ea explicabo unde tempora nobis commodi, delectus ipsa voluptatibus. Tenetur, reprehenderit? Delectus explicabo fugit dicta vitae. Officia.</p>
+        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, ipsam, eveniet dolores ea explicabo unde tempora nobis commodi, delectus ipsa voluptatibus. Tenetur, reprehenderit? Delectus explicabo fugit dicta vitae. Officia.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Cerrar" data-trigger="hover" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="reserva" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-dark" id="exampleModalLabel">Reserva Nacional Los Flamencos</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/card2.jpg" class="card-img-top img-fluid my-3" alt="reserva nacional los flamencos">
+        
+        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, ipsam, eveniet dolores ea explicabo unde tempora nobis commodi, delectus ipsa voluptatibus. Tenetur, reprehenderit? Delectus explicabo fugit dicta vitae. Officia.</p>
+        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, ipsam, eveniet dolores ea explicabo unde tempora nobis commodi, delectus ipsa voluptatibus. Tenetur, reprehenderit? Delectus explicabo fugit dicta vitae. Officia.</p>
+        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, ipsam, eveniet dolores ea explicabo unde tempora nobis commodi, delectus ipsa voluptatibus. Tenetur, reprehenderit? Delectus explicabo fugit dicta vitae. Officia.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal fade" id="laguna" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-dark" id="exampleModalLabel">Laguna chaxa</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/card3.jpg" class="card-img-top img-fluid my-3" alt="Paisajes de Torres del Paine">
+        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, ipsam, eveniet dolores ea explicabo unde tempora nobis commodi, delectus ipsa voluptatibus. Tenetur, reprehenderit? Delectus explicabo fugit dicta vitae. Officia.</p>
+        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, ipsam, eveniet dolores ea explicabo unde tempora nobis commodi, delectus ipsa voluptatibus. Tenetur, reprehenderit? Delectus explicabo fugit dicta vitae. Officia.</p>
+        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, ipsam, eveniet dolores ea explicabo unde tempora nobis commodi, delectus ipsa voluptatibus. Tenetur, reprehenderit? Delectus explicabo fugit dicta vitae. Officia.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="bosque" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-dark" id="exampleModalLabel">Bosque Valdiviano</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/img/card4.jpg" class="card-img-top img-fluid my-3" alt="Paisajes de Torres del Paine">
+        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, ipsam, eveniet dolores ea explicabo unde tempora nobis commodi, delectus ipsa voluptatibus. Tenetur, reprehenderit? Delectus explicabo fugit dicta vitae. Officia.</p>
+        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, ipsam, eveniet dolores ea explicabo unde tempora nobis commodi, delectus ipsa voluptatibus. Tenetur, reprehenderit? Delectus explicabo fugit dicta vitae. Officia.</p>
+        <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab modi, ipsam, eveniet dolores ea explicabo unde tempora nobis commodi, delectus ipsa voluptatibus. Tenetur, reprehenderit? Delectus explicabo fugit dicta vitae. Officia.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--contacto-->
+    <section id="contacto" class="container-fluid my-5">
+      <h2 class=" text-center">Contacto</h2>
+        <hr class="text-info bg-info">
+    
+        <div class="typeform-widget p-3" data-url="https://form.typeform.com/to/IilcbR8T?typeform-medium=embed-snippet" data-hide-headers="true" data-hide-footer="true" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+      </section>
+  </section>
+<!--footer-->
   <footer class="container-fluid bg-info py-3">
     <div class="row">
       <div class="text-left col-md-6 text-center"><h2 class="font-weight-bold" style="color: white;">VIAJES DE CHILE</h2></div>
-        <div class="col-md-4 text-center">
+        <div class="col-md-4 text-center" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Siguenos en nuestras redes!" data-trigger="hover" >
           <a href="https://github.com" target="_blank"><i class="fab fa-github-square
           fa-3x text-light px-2"></i></a>
           <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square
