@@ -1,5 +1,5 @@
 $(function(){
-    
+
 //popover
 
     $('[data-toggle="popover"]').popover()
@@ -17,3 +17,17 @@ $("#destacados").click(function(){
 $(".card-img-top, .boton").click(function () {
     $(".card-body").toggle("slow")
   })
+
+//tooltip
+$('[data-toggle="tooltip"]').tooltip();    
+  
+
+$("#chile").click(function () {
+    alert("¡Estás mejor lugar para elegir tu próximo destino!");
+  })
+  
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+          return new bootstrap.Tooltip(tooltipTriggerEl)
+  
+      })
